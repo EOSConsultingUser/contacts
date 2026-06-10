@@ -1,14 +1,12 @@
 # EOS NFC Digital Business Cards
 
-Updated corporate profile design.
+Hero-style EOS digital NFC business cards.
 
-Active links after Vercel deployment:
+Active links:
 
-- /fausto
-- /juan
-- /tomas
-- /mafe
+- https://contacts-eoscons.vercel.app/fausto
+- https://contacts-eoscons.vercel.app/juan
+- https://contacts-eoscons.vercel.app/tomas
+- https://contacts-eoscons.vercel.app/mafe
 
-Example:
-
-https://contacts-eoscons.vercel.app/fausto
+NFC Tools: program each card as URL/URI only.

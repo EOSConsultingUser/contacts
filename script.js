@@ -52,69 +52,46 @@ function renderCard(person) {
 
   document.getElementById("app").innerHTML = `
     <section class="page">
-      <article class="profile">
-        <header class="logo-wrap">
-          <img src="/assets/logo.jpg" alt="EOS Construction & Consulting" class="logo" />
-        </header>
+      <div class="background-photo">
+        <img src="${person.photo}" alt="${person.name}" />
+      </div>
+      <div class="overlay"></div>
 
-        <section class="hero">
-          <div class="content">
-            <h1 class="name">${person.name}</h1>
-            <div class="short-line"></div>
-            <h2 class="title">${person.title}</h2>
-            <p class="company">${person.company}</p>
-            <p class="bio">${person.bio}</p>
-          </div>
+      <section class="content">
+        <img src="/assets/logo.jpg" alt="EOS Construction & Consulting" class="logo" />
 
-          <div class="photo-panel">
-            <img src="${person.photo}" alt="${person.name}" />
-          </div>
-        </section>
+        <h1 class="name">${person.name}</h1>
+        <div class="short-line"></div>
+        <h2 class="title">${person.title}</h2>
 
-        <section class="contact-section">
+        <section class="contact-list">
           <div class="contact-row">
             <div class="icon">☎</div>
-            <div>
-              <p class="label">Phone</p>
-              <p class="value">${person.displayPhone}</p>
-            </div>
+            <div class="value">${person.displayPhone}</div>
           </div>
-
           <div class="contact-row">
             <div class="icon">✉</div>
-            <div>
-              <p class="label">Email</p>
-              <p class="value">${person.email}</p>
-            </div>
+            <div class="value">${person.email}</div>
           </div>
-
           <div class="contact-row">
             <div class="icon">◎</div>
-            <div>
-              <p class="label">Website</p>
-              <p class="value">${person.website}</p>
-            </div>
+            <div class="value">${person.website}</div>
           </div>
-
           <div class="contact-row">
             <div class="icon">in</div>
-            <div>
-              <p class="label">LinkedIn</p>
-              <p class="value">${person.linkedin.replace("https://www.", "")}</p>
-            </div>
+            <div class="value">${person.linkedinDisplay}</div>
           </div>
         </section>
 
         <section class="actions">
-          <a class="btn primary" href="tel:${person.phone}">Call</a>
-          <a class="btn" href="mailto:${person.email}">Email</a>
-          <a class="btn" href="#" id="saveContact">Save Contact</a>
-          <a class="btn" href="${person.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="${person.website}" target="_blank" rel="noopener">Website</a>
+          <a class="btn primary" href="#" id="saveContact">SAVE CONTACT</a>
+          <a class="btn" href="tel:${person.phone}">CALL</a>
+          <a class="btn" href="mailto:${person.email}">EMAIL</a>
+          <a class="btn" href="${person.linkedin}" target="_blank" rel="noopener">LINKEDIN</a>
         </section>
 
-        <footer class="footer">EOS Construction & Consulting</footer>
-      </article>
+        <footer class="footer">${person.company}</footer>
+      </section>
     </section>
   `;
 
