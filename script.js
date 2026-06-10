@@ -52,32 +52,68 @@ function renderCard(person) {
 
   document.getElementById("app").innerHTML = `
     <section class="page">
-      <header class="header">
-        <img src="/assets/logo.jpg" alt="EOS Construction & Consulting" class="logo" />
-      </header>
+      <article class="profile">
+        <header class="logo-wrap">
+          <img src="/assets/logo.jpg" alt="EOS Construction & Consulting" class="logo" />
+        </header>
 
-      <article class="card">
-        <div class="photo-wrap">
-          <img src="${person.photo}" alt="${person.name}" class="profile-photo" />
-        </div>
-
-        <section class="info">
-          <h1 class="name">${person.name}</h1>
-          <p class="title">${person.title}</p>
-          <p class="company">${person.company}</p>
-
-          <div class="divider"></div>
-
-          <div class="actions">
-            <a class="btn primary" href="#" id="saveContact">Save Contact</a>
-            <a class="btn" href="tel:${person.phone}">Call</a>
-            <a class="btn" href="mailto:${person.email}">Email</a>
-            <a class="btn" href="${person.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn" href="${person.website}" target="_blank" rel="noopener">Website</a>
+        <section class="hero">
+          <div class="content">
+            <h1 class="name">${person.name}</h1>
+            <div class="short-line"></div>
+            <h2 class="title">${person.title}</h2>
+            <p class="company">${person.company}</p>
+            <p class="bio">${person.bio}</p>
           </div>
 
-          <div class="footer">EOS Construction & Consulting</div>
+          <div class="photo-panel">
+            <img src="${person.photo}" alt="${person.name}" />
+          </div>
         </section>
+
+        <section class="contact-section">
+          <div class="contact-row">
+            <div class="icon">☎</div>
+            <div>
+              <p class="label">Phone</p>
+              <p class="value">${person.displayPhone}</p>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="icon">✉</div>
+            <div>
+              <p class="label">Email</p>
+              <p class="value">${person.email}</p>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="icon">◎</div>
+            <div>
+              <p class="label">Website</p>
+              <p class="value">${person.website}</p>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="icon">in</div>
+            <div>
+              <p class="label">LinkedIn</p>
+              <p class="value">${person.linkedin.replace("https://www.", "")}</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="actions">
+          <a class="btn primary" href="tel:${person.phone}">Call</a>
+          <a class="btn" href="mailto:${person.email}">Email</a>
+          <a class="btn" href="#" id="saveContact">Save Contact</a>
+          <a class="btn" href="${person.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="${person.website}" target="_blank" rel="noopener">Website</a>
+        </section>
+
+        <footer class="footer">EOS Construction & Consulting</footer>
       </article>
     </section>
   `;
@@ -91,7 +127,7 @@ function renderCard(person) {
 function renderNotFound() {
   document.getElementById("app").innerHTML = `
     <section class="not-found">
-      <img src="/assets/logo.jpg" alt="EOS Construction & Consulting" class="logo" style="margin: 0 auto 30px;" />
+      <img src="/assets/logo.jpg" alt="EOS Construction & Consulting" class="logo" />
       <h1>Contact Not Found</h1>
       <p>This EOS digital business card does not exist.</p>
       <a href="/fausto">Go to Fausto's card</a>
