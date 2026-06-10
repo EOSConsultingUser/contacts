@@ -1,43 +1,35 @@
 # EOS NFC Digital Business Cards
 
-This is a static website for EOS NFC business cards.
+Static site for EOS digital NFC business cards.
 
-## Employee URLs
+## Active Cards
 
-After deploying to Vercel, use these URLs for NFC cards:
+After deployment, use:
 
-- /fausto
-- /juan
-- /tomas
-- /mafe
-- /nicolas
-- /gustavo
+- `/fausto`
+- `/juan`
+- `/tomas`
+- `/mafe`
 
 Example:
 
-https://your-project.vercel.app/fausto
+`https://your-project.vercel.app/fausto`
 
-## How to edit contact information
+## Upload to GitHub
 
-Open `contacts.js` and change each person's:
+Upload these files/folders to the root of the repository:
 
-- name
-- title
-- phone
-- email
-- website
-- services
+- `index.html`
+- `style.css`
+- `contacts.js`
+- `script.js`
+- `vercel.json`
+- `assets/`
 
-## How to deploy
+## NFC Tools
 
-1. Create a new GitHub repository.
-2. Upload these files:
-   - index.html
-   - style.css
-   - contacts.js
-   - script.js
-   - README.md
-3. Go to Vercel.
-4. Add New Project.
-5. Import your GitHub repository.
-6. Deploy.
+Program each NFC card as URL/URI only.
+
+Example:
+
+`https://your-project.vercel.app/fausto`
