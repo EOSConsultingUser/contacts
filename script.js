@@ -52,11 +52,6 @@ function renderCard(person) {
 
   document.getElementById("app").innerHTML = `
     <section class="page">
-      <div class="background-photo">
-        <img src="${person.photo}" alt="${person.name}" />
-      </div>
-      <div class="overlay"></div>
-
       <section class="content">
         <img src="/assets/logo.jpg" alt="EOS Construction & Consulting" class="logo" />
 
@@ -91,6 +86,10 @@ function renderCard(person) {
         </section>
 
         <footer class="footer">${person.company}</footer>
+      </section>
+
+      <section class="photo-panel">
+        <img src="${person.photo}" alt="${person.name}" />
       </section>
     </section>
   `;

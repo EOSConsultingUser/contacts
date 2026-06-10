@@ -1,6 +1,6 @@
 # EOS NFC Digital Business Cards
 
-Hero-style EOS digital NFC business cards.
+Sharp photo version. No white overlay or image filter.
 
 Active links:
 
