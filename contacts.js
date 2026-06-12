@@ -46,5 +46,27 @@ const contacts = {
     linkedin: "https://www.linkedin.com/in/maria-godi/",
     linkedinDisplay: "linkedin.com/in/maria-godi/",
     photo: "/assets/mafe.jpg"
-  }
+  },
+  nicolas: {
+  name: "Nicolas Martinez",
+  title: "Foreman",
+  company: "EOS Construction & Consulting",
+  phone: "+17785842921",
+  displayPhone: "+1 (778) 584-2921",
+  email: "nmartinez@eosconsultinginc.ca",
+  website: "https://eoscons.ca",
+  linkedin: "",
+  photo: "/assets/nicolas-placeholder.jpg"
+},
+
+gustavo: {
+  name: "Gustavo Guerrero",
+  title: "Foreman",
+  company: "EOS Construction & Consulting",
+  phone: "+16474506916",
+  displayPhone: "+1 (647) 450-6916",
+  email: "gguerrero@eosconsultinginc.ca",
+  website: "https://eoscons.ca",
+  linkedin: "",
+  photo: "/assets/gustavo-placeholder.jpg"
 };
