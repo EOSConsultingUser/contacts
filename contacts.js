@@ -53,7 +53,7 @@ const contacts = {
   company: "EOS Construction & Consulting",
   phone: "+17785842921",
   displayPhone: "+1 (778) 584-2921",
-  email: "nmartinez@eosconsultinginc.ca",
+  email: "siteadmin@eosconsultinginc.ca",
   website: "https://eoscons.ca",
   linkedin: "",
   photo: "/assets/nicolas-placeholder.jpg"
@@ -65,7 +65,7 @@ gustavo: {
   company: "EOS Construction & Consulting",
   phone: "+16474506916",
   displayPhone: "+1 (647) 450-6916",
-  email: "gguerrero@eosconsultinginc.ca",
+  email: "siteadmin@eosconsultinginc.ca",
   website: "https://eoscons.ca",
   linkedin: "",
   photo: "/assets/gustavo-placeholder.jpg"
