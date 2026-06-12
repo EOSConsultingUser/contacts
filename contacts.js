@@ -69,4 +69,5 @@ gustavo: {
   website: "https://eoscons.ca",
   linkedin: "",
   photo: "/assets/gustavo-placeholder.jpg"
+},
 };
