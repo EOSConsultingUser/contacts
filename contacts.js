@@ -56,7 +56,7 @@ const contacts = {
   email: "siteadmin@eosconsultinginc.ca",
   website: "https://eoscons.ca",
   linkedin: "",
-  photo: "/assets/nicolas-placeholder.jpg"
+  photo: "/assets/nicolas.jpeg"
 },
 
 gustavo: {
@@ -68,6 +68,6 @@ gustavo: {
   email: "siteadmin@eosconsultinginc.ca",
   website: "https://eoscons.ca",
   linkedin: "",
-  photo: "/assets/gustavo-placeholder.jpg"
+  photo: "/assets/gustavo.jpg"
 },
 };
