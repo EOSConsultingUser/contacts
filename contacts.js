@@ -68,6 +68,6 @@ gustavo: {
   email: "siteadmin@eosconsultinginc.ca",
   website: "https://eoscons.ca",
   linkedin: "",
-  photo: "/assets/gustavo.jpg"
+  photo: "/assets/gustavo.jpeg"
 },
 };
